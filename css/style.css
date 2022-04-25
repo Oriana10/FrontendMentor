@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+header nav {
+  display: none;
+}
+header .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .images .cart {
+  height: 20px;
+}
+header .images .profile {
+  height: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
