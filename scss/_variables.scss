@@ -6,3 +6,15 @@ $-grayish-blue: hsl(220, 14%, 75%);
 $--ligh-grayish-blue: hsl(223, 64%, 98%);
 $--white: hsl(0, 0%, 100%);
 $--black: hsl(0, 0%, 0%,75%);
+
+$breakpoints: (
+    /*mobile: 350px,*/
+    tablet: 800px,
+    desktop: 1200px
+);
+
+/*
+Móviles: entre 320 y 480 píxeles.
+Tablets: entre 768 y 1024 píxeles.
+Pantallas grandes: más de 1200 píxeles.
+*/

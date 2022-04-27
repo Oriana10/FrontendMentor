@@ -1,0 +1,143 @@
+@import "variables";
+
+main {
+    .product-images {
+        position: relative;
+        .main-picture {
+            width: 100vw;
+            height: auto;
+        }
+
+        .nexts {
+            position: absolute;
+            top: 160px;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            .previus, .next {
+                background-color: $--white;
+                margin: 0 20px;
+                border-radius: 50%;
+            }
+            .previus {
+                padding: 15px 20px 15px 18px;
+            }
+            .next {
+                padding: 15px 18px 15px 20px;
+            }
+            .previus:hover, .next:hover {
+                background-color: $-grayish-blue;
+                margin: 0 20px;
+                border-radius: 50%;
+                transition: 0.5s;
+            }
+        }
+
+        .aside-images {
+            display: none;
+        }
+    }
+}
+
+/*****/
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 20px;
+
+    h5 {
+        color: $--primary-color-orange;
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .text {
+        color: $--dark-grayish-blue;
+        line-height: 20px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .actual {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .actual::after {
+            content: "50%";
+            color: $--primary-color-orange;
+            font-size: 2rem;
+            position: absolute;
+            top: 6px;
+            left: 120px;
+        }
+
+        .old {
+            color: $-grayish-blue;
+            font-size: 2rem;
+            text-decoration: line-through;
+        }
+
+    }
+
+    .ammount-and-cart {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .ammount {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $--ligh-grayish-blue;
+            padding: 5px 20px;
+            border-radius: 15px;
+
+            .number {
+                font-weight: bold;
+            }
+
+            .minus,
+            .plus {
+                font-size: 4rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: $--primary-color-orange;
+            }
+        }
+
+        button {
+            background-color: $--primary-color-orange;
+            border: none;
+            padding: 20px;
+            color: $--white;
+            font-weight: bold;
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 20px $--primary-color-orange;
+
+        }
+
+        button:hover {
+            background-color: $--white;
+            transition: 0.5s;
+            color: $--primary-color-orange;
+            border: 1px solid $--primary-color-orange;
+        
+        }
+    }
+}

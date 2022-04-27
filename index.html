@@ -18,8 +18,10 @@
   </head>
   <body>
     <header>
+      <div class="menu-and-logo">
       <img class="menu" src="images/icon-menu.svg" alt="Menu" />
       <img class="logo" src="images/logo.svg" alt="Logo" />
+    </div>
       <nav>
         <ul>
           <li><a href="#">Collections</a></li>
@@ -29,7 +31,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <div class="images">
+      <div class="cart-and-profile">
         <img class="cart" src="images/icon-cart.svg" alt="Cart" />
         <img class="profile" src="images/image-avatar.png" alt="Profile" />
       </div>
@@ -37,7 +39,15 @@
 
     <main>
       <section class="product-images">
-        <img src="images/image-product-1.jpg" alt="Product" />
+        <img class="main-picture" src="images/image-product-1.jpg" alt="Product" />
+        <div class="nexts">
+          <div class="previus">
+            <img src="images/icon-previous.svg" alt="previus">
+          </div>
+          <div class="next">
+            <img src="images/icon-next.svg" alt="next">
+          </div>
+        </div>
         <div class="aside-images">
           <img src="images/image-product-1-thumbnail.jpg" alt="Product" />
           <img src="images/image-product-2-thumbnail.jpg" alt="Product" />
@@ -47,20 +57,24 @@
       </section>
 
       <section class="description">
-        <h5>Sneaker Company</h5>
+        <h5>SNEAKER COMPANY</h5>
         <h2>Fall Limited Edition Sneakers</h2>
-        <p>
+        <p class="text">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
         <div class="price">
-          <p>$125.00</p>
-          <!--50%-->
-          <p>$250.00</p>
+          <p class="actual">$125.00</p> <!--50%-->
+          <p class="old">$250.00</p>
         </div>
         <div class="ammount-and-cart">
-          <!-- - -->0<!-- + -->
+          <div class="ammount">
+            <a href="#"class="minus">-</a>
+            <p class="number">0</p>
+            <a href="#" class="plus">+</a>
+
+          </div>
           <button type="button">
             <img src="images/icon-cart.svg" alt="cart" />Add to Cart
           </button>
