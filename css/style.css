@@ -24,22 +24,35 @@ Móviles: entre 320 y 480 píxeles.
 Tablets: entre 768 y 1024 píxeles.
 Pantallas grandes: más de 1200 píxeles.
 */
+/* MOBILE */
 header {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 11vh;
   width: 100%;
   justify-content: space-between;
+  /* TABLET 
+
+  @include media-up(tablet) {
+
+  }
+
+  /* DESKTOP 
+
+  @include media-up(desktop) {
+
+  }
+  */
 }
 header nav {
   display: none;
 }
 header .menu-and-logo .menu {
-  height: 1.6vh;
+  height: 2.8vh;
   margin-left: 30px;
 }
 header .menu-and-logo .logo {
-  height: 2.2vh;
+  height: 3.5vh;
   margin-left: 15px;
 }
 header .cart-and-profile {
@@ -50,10 +63,10 @@ header .cart-and-profile {
   margin-right: 30px;
 }
 header .cart-and-profile .cart {
-  height: 2.5vh;
+  height: 3vh;
 }
 header .cart-and-profile .profile {
-  height: 4vh;
+  height: 4.5vh;
   border: 1px solid;
   border-radius: 50%;
 }
@@ -81,12 +94,15 @@ main .product-images .nexts .previus, main .product-images .nexts .next {
   background-color: hsl(0deg, 0%, 100%);
   margin: 0 20px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 10vw;
 }
-main .product-images .nexts .previus {
-  padding: 15px 20px 15px 18px;
-}
-main .product-images .nexts .next {
-  padding: 15px 18px 15px 20px;
+main .product-images .nexts .previus img, main .product-images .nexts .next img {
+  height: 2.5vh;
+  width: auto;
 }
 main .product-images .nexts .previus:hover, main .product-images .nexts .next:hover {
   background-color: hsl(220deg, 14%, 75%);

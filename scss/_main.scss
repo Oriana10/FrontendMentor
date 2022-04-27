@@ -18,12 +18,15 @@ main {
                 background-color: $--white;
                 margin: 0 20px;
                 border-radius: 50%;
-            }
-            .previus {
-                padding: 15px 20px 15px 18px;
-            }
-            .next {
-                padding: 15px 18px 15px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 8vh;
+                width: 10vw;
+                img {
+                    height: 2.5vh;
+                    width: auto;
+                }
             }
             .previus:hover, .next:hover {
                 background-color: $-grayish-blue;

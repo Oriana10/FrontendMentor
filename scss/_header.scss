@@ -6,16 +6,12 @@
     }
 }
 
-
-
-
-
 /* MOBILE */
 
 header {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 11vh;
     width: 100%;
     justify-content: space-between;
 
@@ -25,12 +21,12 @@ header {
 
     .menu-and-logo {
         .menu {
-            height: 1.6vh;
+            height: 2.8vh;
             margin-left: 30px;
         }
 
         .logo {
-            height: 2.2vh;
+            height: 3.5vh;
             margin-left: 15px;
         }
     }
@@ -43,40 +39,27 @@ header {
         margin-right: 30px;
 
         .cart {
-            height: 2.5vh;
+            height: 3vh;
         }
 
         .profile {
-            height: 4vh;
+            height: 4.5vh;
             border: 1px solid;
             border-radius: 50%;
         }
     }
 
-
-
-
-
-
-    /* TABLET */
+    /* TABLET 
 
     @include media-up(tablet) {
         
-            display: none;
-        
     }
 
-
-
-
-
-    /* DESKTOP */
+    /* DESKTOP 
 
     @include media-up(desktop) {
         
-        }
+    }
+    */
 
 }
-
-
-
