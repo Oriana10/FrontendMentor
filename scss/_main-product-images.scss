@@ -1,0 +1,103 @@
+@import "variables";
+@import "base";
+
+main {
+
+    /* MOBILE */
+
+    .container {
+        position: relative;
+
+        .main-picture {
+            width: 100vw;
+            height: auto;
+        }
+
+        .nexts {
+            position: absolute;
+            top: 160px;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+
+            .previus,
+            .next {
+                background-color: $--white;
+                margin: 0 20px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 8vh;
+                width: 10vw;
+
+                img {
+                    height: 2.5vh;
+                    width: auto;
+                }
+            }
+
+            .previus:hover,
+            .next:hover {
+                background-color: $-grayish-blue;
+                margin: 0 20px;
+                border-radius: 50%;
+                transition: 0.5s;
+            }
+        }
+
+        .aside-images {
+            display: none;
+        }
+    }
+
+}
+
+/* DESKTOP */
+
+@include media-up(desktop) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 135px;
+        width: 100%;
+
+        .product-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .main-picture {
+                    width: 34vw;
+                    height: auto;
+                    border-radius: 20px;
+                }
+
+                .nexts {
+                    display: none;
+                }
+
+                .aside-images {
+                    display: flex;
+                    gap: 30px;
+
+
+                    img {
+                        width: 100px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

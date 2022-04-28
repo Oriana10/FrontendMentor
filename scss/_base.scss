@@ -12,3 +12,9 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.6rem;
 }
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

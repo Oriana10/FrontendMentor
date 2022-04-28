@@ -1,0 +1,220 @@
+@import "variables";
+@import "base";
+
+main {
+
+    margin: 50px 0 120px 0;
+
+    /* MOBILE */
+
+    /*
+    .description {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        gap: 30px;
+
+        h5 {
+            color: $--primary-color-orange;
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        .text {
+            color: $--dark-grayish-blue;
+            line-height: 30px;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 10px;
+
+            .actual {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .actual::after {
+                content: "50%";
+                color: $--primary-color-orange;
+                font-size: 2rem;
+                position: absolute;
+                top: 6px;
+                left: 120px;
+            }
+
+            .old {
+                color: $-grayish-blue;
+                font-size: 2rem;
+                text-decoration: line-through;
+            }
+
+        }
+
+        .ammount-and-cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .ammount {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $--ligh-grayish-blue;
+                padding: 5px 20px;
+                border-radius: 15px;
+                width: 40%;
+
+                .number {
+                    font-weight: bold;
+                }
+
+                .minus,
+                .plus {
+                    font-size: 4rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: $--primary-color-orange;
+                }
+            }
+
+            button {
+                background-color: $--primary-color-orange;
+                border: none;
+                padding: 20px 40px;
+                color: $--white;
+                font-weight: bold;
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                border-radius: 15px;
+                box-shadow: 3px 3px 20px $--primary-color-orange;
+                width: 60%;
+            }
+
+            button:hover {
+                background-color: $--white;
+                transition: 0.5s;
+                color: $--primary-color-orange;
+                border: 1px solid $--primary-color-orange;
+
+            }
+        }
+    }
+    */
+
+    /* DESKTOP */
+
+    @include media-up(desktop) {
+        .description {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            gap: 30px;
+    
+            h5 {
+                color: $--primary-color-orange;
+                font-size: 1.6rem;
+            }
+    
+            h2 {
+                font-size: 4rem;
+            }
+    
+            .text {
+                color: $--dark-grayish-blue;
+                line-height: 30px;
+            }
+    
+            .price {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                gap: 10px;
+    
+                .actual {
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+    
+                .actual::after {
+                    content: "50%";
+                    color: $--primary-color-orange;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 6px;
+                    left: 120px;
+                }
+    
+                .old {
+                    color: $-grayish-blue;
+                    font-size: 2rem;
+                    text-decoration: line-through;
+                }
+    
+            }
+    
+            .ammount-and-cart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+    
+                .ammount {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $--ligh-grayish-blue;
+                    padding: 5px 20px;
+                    border-radius: 15px;
+                    width: 40%;
+    
+                    .number {
+                        font-weight: bold;
+                    }
+    
+                    .minus,
+                    .plus {
+                        font-size: 4rem;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: $--primary-color-orange;
+                    }
+                }
+    
+                button {
+                    background-color: $--primary-color-orange;
+                    border: none;
+                    padding: 20px 40px;
+                    color: $--white;
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    border-radius: 15px;
+                    box-shadow: 3px 3px 20px $--primary-color-orange;
+                    width: 60%;
+                }
+    
+                button:hover {
+                    background-color: $--white;
+                    transition: 0.5s;
+                    color: $--primary-color-orange;
+                    border: 1px solid $--primary-color-orange;
+    
+                }
+            }
+        }
+    }
+
+}
