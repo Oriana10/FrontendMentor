@@ -7,12 +7,11 @@ main {
 
     /* MOBILE */
 
-    /*
     .description {
         display: flex;
         flex-direction: column;
-        width: 500px;
-        gap: 30px;
+        gap: 20px;
+        padding: 25px 20px;
 
         h5 {
             color: $--primary-color-orange;
@@ -20,22 +19,22 @@ main {
         }
 
         h2 {
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         .text {
             color: $--dark-grayish-blue;
-            line-height: 30px;
+            line-height: 20px;
         }
 
         .price {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             position: relative;
-            gap: 10px;
 
             .actual {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-weight: bold;
             }
 
@@ -44,7 +43,7 @@ main {
                 color: $--primary-color-orange;
                 font-size: 2rem;
                 position: absolute;
-                top: 6px;
+                top: 2px;
                 left: 120px;
             }
 
@@ -58,8 +57,7 @@ main {
 
         .ammount-and-cart {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             gap: 20px;
 
             .ammount {
@@ -69,7 +67,6 @@ main {
                 background-color: $--ligh-grayish-blue;
                 padding: 5px 20px;
                 border-radius: 15px;
-                width: 40%;
 
                 .number {
                     font-weight: bold;
@@ -87,7 +84,7 @@ main {
             button {
                 background-color: $--primary-color-orange;
                 border: none;
-                padding: 20px 40px;
+                padding: 20px;
                 color: $--white;
                 font-weight: bold;
                 font-size: 1.6rem;
@@ -97,7 +94,7 @@ main {
                 gap: 15px;
                 border-radius: 15px;
                 box-shadow: 3px 3px 20px $--primary-color-orange;
-                width: 60%;
+
             }
 
             button:hover {
@@ -109,42 +106,42 @@ main {
             }
         }
     }
-    */
 
     /* DESKTOP */
 
     @include media-up(desktop) {
+
         .description {
             display: flex;
             flex-direction: column;
             width: 500px;
             gap: 30px;
-    
+
+
             h5 {
                 color: $--primary-color-orange;
                 font-size: 1.6rem;
             }
-    
+
             h2 {
                 font-size: 4rem;
             }
-    
+
             .text {
                 color: $--dark-grayish-blue;
                 line-height: 30px;
             }
-    
+
             .price {
                 display: flex;
-                flex-direction: column;
                 position: relative;
                 gap: 10px;
-    
+
                 .actual {
                     font-size: 3rem;
                     font-weight: bold;
                 }
-    
+
                 .actual::after {
                     content: "50%";
                     color: $--primary-color-orange;
@@ -153,21 +150,22 @@ main {
                     top: 6px;
                     left: 120px;
                 }
-    
+
                 .old {
                     color: $-grayish-blue;
                     font-size: 2rem;
                     text-decoration: line-through;
                 }
-    
+
             }
-    
+
             .ammount-and-cart {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-    
+
                 .ammount {
                     display: flex;
                     justify-content: space-between;
@@ -176,11 +174,11 @@ main {
                     padding: 5px 20px;
                     border-radius: 15px;
                     width: 40%;
-    
+
                     .number {
                         font-weight: bold;
                     }
-    
+
                     .minus,
                     .plus {
                         font-size: 4rem;
@@ -189,7 +187,7 @@ main {
                         color: $--primary-color-orange;
                     }
                 }
-    
+
                 button {
                     background-color: $--primary-color-orange;
                     border: none;
@@ -202,16 +200,17 @@ main {
                     align-items: center;
                     gap: 15px;
                     border-radius: 15px;
+                    margin-bottom: 0;
                     box-shadow: 3px 3px 20px $--primary-color-orange;
                     width: 60%;
                 }
-    
+
                 button:hover {
                     background-color: $--white;
                     transition: 0.5s;
                     color: $--primary-color-orange;
                     border: 1px solid $--primary-color-orange;
-    
+
                 }
             }
         }
